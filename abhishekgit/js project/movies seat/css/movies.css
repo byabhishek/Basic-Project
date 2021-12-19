@@ -1,0 +1,89 @@
+body {
+  background-color: black;
+  color: #fff;
+  justify-content: center;
+  height: 100 vh;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-selector {
+  margin-top: 20px;
+}
+
+.movie-selector select {
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  appearance: none;
+}
+
+.moviesseat {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  margin-top: 29px;
+}
+
+.moviesseat li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.moviesseat li small {
+  margin-left: 2px;
+}
+
+.mseat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mseat.selected {
+  background-color: #c3faff;
+}
+
+.mseat.occupied {
+  background-color: #fff;
+}
+
+.mseat:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.screen {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(170, 170, 170);
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgb(255 255 255 / 70%);
+  border-radius: 15px 15px 0px 0px;
+}
+
+.screen-with-seat {
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.row {
+  display: flex;
+}
+
+p.text span {
+  color: #6feaf6;
+}

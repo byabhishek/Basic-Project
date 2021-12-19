@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/formfilling.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Register With Us</h2>
+    <form>
+      <label for="usname">User name</label>
+      <input type="text" id="ename" name="usname" onkeyup="usernameSubmission()" placeholder="Enter username" />
+      <label for="">Email</label>
+      <input type="text" id="email" name="email" onkeyup="emailValidation()" placeholder="Email email" />
+      <label for="passwor">Password</label>
+      <input type="password" id="passwor" name="password" onkeyup="passwordSubmission()" placeholder="Enter password" />
+      <input type="checkbox" id="show" onclick="showPassword()" /><span>Show Password</span>
+      <label for="confirmpassw">Confirm Password</label>
+      <input type="password" id="confirmpass" name="cpassword" onkeyup="passwordValidation()"
+        placeholder="Enter password again" />
+    </form>
+  </div>
+  <script src=" ./js/formfilling.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/typing.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/typing.css">
+
+</head>
+
+<body>
+  <div id="header" class="header">
+    <div>
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+  </div>
+  <div class="container">
+    <h2>👩‍💻 Speed Typer 👨‍💻</h2>
+    <small>Type the following:</small>
+    <h1 id="typing-word">tense</h1>
+    <input type="text" id="text" placeholder="Type the word here..." onkeyup="typingGame()" />
+    <div class="time">
+      <p>Time left: <span id="time-count">0s</span></p>
+    </div>
+    <div class="score">
+      <p>Score: <span id="scores"> 0</span></p>
+    </div>
+    <div id="end-game-container" class="end-game-container"></div>
+  </div>
+  <button id="setting-btn" class="setting-btn">
+    <i class="fa fa-cog" style="font-size: 14px"></i>
+  </button>
+  <script src=" ./js/typing.js"> </script>
+</body>
+
+</html>
